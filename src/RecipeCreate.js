@@ -32,27 +32,27 @@ function RecipeCreate({recipies,addRecipe}) {
           <tr>
             <td key="name">
               <label htmlFor="name">
-                <input id="name" type="text" name="name" placeholder="Name" onChange={changeHandler} value={formData.name}></input>
+                <input id="name" type="text" name="name" placeholder="Name" onChange={changeHandler} value={formData.name} required></input>
               </label>
             </td>
             <td key="cuisine">
               <label htmlFor="cuisine">
-                <input id="cuisine" type="text" name="cuisine" placeholder="Cuisine" onChange={changeHandler} value={formData.cuisine}></input>
+                <input id="cuisine" type="text" name="cuisine" placeholder="Cuisine" onChange={changeHandler} value={formData.cuisine} required></input>
               </label>
             </td>
             <td key="photo">
               <label htmlFor="photo">
-                <input id="photo" type="url" name="photo" placeholder="URL" onChange={changeHandler} value={formData.photo}></input>
+                <input id="photo" type="url" name="photo" placeholder="URL" onChange={changeHandler} value={formData.photo} required></input>
               </label>
             </td>
             <td key="ingredients">
               <label htmlFor="ingredients">
-                <textarea id="ingredients" name="ingredients" placeholder="Ingredients" onChange={changeHandler} value={formData.ingredients}></textarea>
+                <textarea id="ingredients" name="ingredients" placeholder="Ingredients" onChange={changeHandler} value={formData.ingredients} required></textarea>
               </label>
             </td>
             <td key="preparation">
               <label htmlFor="preparation">
-                <textarea id="preparation" name="preparation" placeholder="Preparation" onChange={changeHandler} value={formData.preparation}></textarea>
+                <textarea id="preparation" name="preparation" placeholder="Preparation" onChange={changeHandler} value={formData.preparation} required></textarea>
               </label>
             </td>
             <td>
